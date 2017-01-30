@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "RotisSemiSerifHellenW15-Bd";
+  src: url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.eot");
+  src: url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.woff") format("woff"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.svg#RotisSemiSerifHellenW15-Bd") format("svg"); }
+@font-face {
+  font-family: "ATRotisSansSerif";
+  src: url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.eot");
+  src: url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.svg#ATRotisSansSerif") format("svg"); }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "RotisSemiSerifHellenW15-Bd", arial, helvetica, sans-serif;
+  font-size: 16px;
+  background: #f2f5f9; }
+
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      width: 750px; } }
+
+header {
+  background-color: #8bbc07;
+  padding: 20px 0 20px;
+  color: white; }
+
+.wrap {
+  height: 100%; }
+
+.wrap.first-page {
+  background: url("../img/logo.png") 90% 90% no-repeat;
+  background-size: 7%; }
+
+main {
+  overflow: hidden;
+  padding: 50px; }
+
+ul {
+  overflow: hidden; }
+  ul .w50 {
+    width: 50%;
+    padding-right: 15px;
+    float: left; }
+
+.item {
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer; }
+  .item .wrap-img img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .item .wrap-text {
+    padding: 40px 30px 50px;
+    background-color: white; }
+    .item .wrap-text h2 {
+      color: #546c79;
+      padding-bottom: 10px; }
+    .item .wrap-text p {
+      font-family: "ATRotisSansSerif";
+      color: #90a2ac; }
+  .item .btn-select {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #403f38; }
+    .item .btn-select:hover {
+      background-color: #83837f; }
+
+/*************/
+.w25 {
+  width: 25%;
+  float: left;
+  padding: 5px; }
+
+.item-person {
+  height: 120px;
+  background: url("../img/man.jpg");
+  background-size: cover;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+
+.item-person.check .hover {
+  display: block; }
+
+.item-person.not-check .hover {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.65); }
+  .item-person.not-check .hover p {
+    display: none; }
+
+.hover {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 600; }
+  .hover p {
+    margin-top: 32px; }
+
+.main-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: #ced1d2; }
+
+.number-chosen-people {
+  margin: 20px 0;
+  color: #f2ae0c;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: solid 3px #f2ae0c;
+  display: inline-block; }
+  .number-chosen-people .chosen {
+    font-size: 20px; }
+
+/*# sourceMappingURL=main.css.map */
