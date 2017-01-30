@@ -16,6 +16,25 @@
   url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.svg#ATRotisSansSerif") format("svg");
 }
 
+@font-face {
+  font-family: "RotisSansSerif";
+  src: url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.eot");
+  src: url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.svg#RotisSansSerif") format("svg");
+}
+
+@font-face {font-family: "Agfa Rotis Sans Serif ExBd";
+  src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot");
+  src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.svg#Agfa Rotis Sans Serif ExBd") format("svg");
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -40,7 +59,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   width: 100%;
   margin: 0 auto;
   @media only screen and (min-width: 1200px) {
-    width: 750px;
+    width: 970px;
   }
   //@media only screen and (max-width: 1200px) {
   //  width: 970px;
@@ -58,6 +77,10 @@ header {
   background-color: #8bbc07;
   padding: 20px 0 20px;
   color: white;
+  .description-text {
+    font-family: "RotisSansSerif";
+    font-size: 14px;
+  }
 }
 
 .wrap {
@@ -104,7 +127,7 @@ ul {
 
     }
     p {
-      font-family: "ATRotisSansSerif";
+      font-family: "RotisSansSerif";
       color: #90a2ac;
     }
   }
@@ -135,7 +158,6 @@ ul {
 
 .item-person {
   height: 120px;
-  //border: solid 1px darkblue;
   background: url("../img/man.jpg");
   background-size: cover;
   border-radius: 3px;
@@ -163,13 +185,15 @@ ul {
   position: absolute;
   top:0;
   left: 0;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.65);
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 600;
   p {
     margin-top: 32px;
+    font-family: "Agfa Rotis Sans Serif ExBd";
+    //font-size: 16px;
   }
 }
 
