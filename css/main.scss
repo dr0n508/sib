@@ -198,6 +198,7 @@ ul {
 }
 
 .main-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd";
   display: inline-block;
   text-transform: uppercase;
   color: white;
@@ -205,6 +206,13 @@ ul {
   border-radius: 25px;
   text-decoration: none;
   background-color: #ced1d2;
+}
+
+.lite-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd";
+  color: #83837f;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .number-chosen-people {
@@ -221,3 +229,80 @@ ul {
 
 
 
+.progress-bar {
+  padding: 20px 0;
+  overflow: hidden;
+  .non-active {
+    &:before {
+      content: "";
+      float: left;
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: #99a0af;
+      margin-top: 4px;
+    }
+    &:after {
+      content: "";
+      float: left;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 2px #99a0af;
+    }
+  }
+  .active {
+    &:first-child:before {
+      display: none;
+    }
+    &:first-child:after {
+      display: none;
+    }
+    &:before {
+      content: "";
+      float: left;
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: #8bbc07;
+      margin-top: 4px;
+    }
+    &:after {
+      content: "";
+      float: left;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 2px #8bbc07;
+    }
+  }
+  .first-circle {
+    float: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px #99a0af;
+  }
+  .first-circle.active {
+    border: solid 2px #8bbc07;
+  }
+
+}
+.control-btns {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .main-btn {
+    background-color: #403f38;
+    padding: 15px 50px;
+
+  }
+  i {
+    padding: 0 10px;
+  }
+}

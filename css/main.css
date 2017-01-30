@@ -133,6 +133,7 @@ ul {
     font-family: "Agfa Rotis Sans Serif ExBd"; }
 
 .main-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd";
   display: inline-block;
   text-transform: uppercase;
   color: white;
@@ -140,6 +141,12 @@ ul {
   border-radius: 25px;
   text-decoration: none;
   background-color: #ced1d2; }
+
+.lite-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd";
+  color: #83837f;
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .number-chosen-people {
   margin: 20px 0;
@@ -150,5 +157,66 @@ ul {
   display: inline-block; }
   .number-chosen-people .chosen {
     font-size: 20px; }
+
+.progress-bar {
+  padding: 20px 0;
+  overflow: hidden; }
+  .progress-bar .non-active:before {
+    content: "";
+    float: left;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #99a0af;
+    margin-top: 4px; }
+  .progress-bar .non-active:after {
+    content: "";
+    float: left;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 2px #99a0af; }
+  .progress-bar .active:first-child:before {
+    display: none; }
+  .progress-bar .active:first-child:after {
+    display: none; }
+  .progress-bar .active:before {
+    content: "";
+    float: left;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #8bbc07;
+    margin-top: 4px; }
+  .progress-bar .active:after {
+    content: "";
+    float: left;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 2px #8bbc07; }
+  .progress-bar .first-circle {
+    float: left;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px #99a0af; }
+  .progress-bar .first-circle.active {
+    border: solid 2px #8bbc07; }
+
+.control-btns {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .control-btns .main-btn {
+    background-color: #403f38;
+    padding: 15px 50px; }
+  .control-btns i {
+    padding: 0 10px; }
 
 /*# sourceMappingURL=main.css.map */
