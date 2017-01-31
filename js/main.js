@@ -21,6 +21,11 @@ $(document).ready(function(){
     $('.carousel ul').width(numberSlides*widthSlide);
 
 
+    $( "#i-see-video" ).click(function() {
+        $(".carousel ul").css('marginLeft', -widthSlide+'px');
+    });
+
+
 
 
 
