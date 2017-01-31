@@ -228,4 +228,9 @@ ul {
   .table-results tbody tr .number-td {
     font-family: "RotisSansSerif"; }
 
+.wrap-btn.results {
+  text-align: center; }
+  .wrap-btn.results .main-btn {
+    background-color: #403f38; }
+
 /*# sourceMappingURL=main.css.map */
