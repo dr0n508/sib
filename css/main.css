@@ -249,7 +249,7 @@ ul {
   border-radius: 5px; }
 .carousel ul li {
   width: 100%;
-  float: left; }
+  display: inline-block; }
   .carousel ul li .item {
     position: relative;
     z-index: 5;

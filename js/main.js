@@ -20,14 +20,12 @@ $(document).ready(function(){
     $('.carousel ul li.not-active').width(600);
     $('.carousel ul').width(numberSlides*widthSlide);
 
-
+    var left = 600;
     $( "#i-see-video" ).click(function() {
-        $(".carousel ul").css('marginLeft', -widthSlide+'px');
+        $(".carousel ul").css('marginLeft', -left+'px');
+        $(".carousel ul li.active").removeClass("active").addClass('not-active').width(600).next('.carousel ul li').removeClass("not-active").addClass('active').width(widthSlide);
+        left = left + 600;
     });
-
-
-
-
 
 
 });
