@@ -211,4 +211,21 @@ ul {
   .control-btns i {
     padding: 0 10px; }
 
+/****table****/
+.table-results {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 50px 0; }
+  .table-results thead tr td {
+    text-transform: uppercase;
+    font-family: "RotisSansSerif";
+    color: #99a0af;
+    font-size: 14px; }
+  .table-results tbody tr td {
+    font-family: "Agfa Rotis Sans Serif ExBd";
+    font-size: 30px;
+    padding: 10px 0; }
+  .table-results tbody tr .number-td {
+    font-family: "RotisSansSerif"; }
+
 /*# sourceMappingURL=main.css.map */
