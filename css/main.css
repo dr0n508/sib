@@ -142,6 +142,9 @@ ul {
   text-decoration: none;
   background-color: #ced1d2; }
 
+.main-btn.active {
+  background-color: #403f38; }
+
 .lite-btn {
   font-family: "Agfa Rotis Sans Serif ExBd";
   color: #83837f;
@@ -150,13 +153,17 @@ ul {
 
 .number-chosen-people {
   margin: 20px 0;
-  color: #f2ae0c;
+  color: #83837f;
   padding: 10px 30px;
   border-radius: 35px;
-  border: solid 3px #f2ae0c;
+  border: solid 3px #83837f;
   display: inline-block; }
   .number-chosen-people .chosen {
     font-size: 20px; }
+
+.number-chosen-people.ready {
+  color: #f2ae0c;
+  border: solid 3px #f2ae0c; }
 
 /****progress-bar*****/
 .progress-bar {
@@ -206,7 +213,6 @@ ul {
   justify-content: space-between;
   align-items: center; }
   .control-btns .main-btn {
-    background-color: #403f38;
     padding: 15px 50px; }
   .control-btns i {
     padding: 0 10px; }
@@ -230,7 +236,5 @@ ul {
 
 .wrap-btn.results {
   text-align: center; }
-  .wrap-btn.results .main-btn {
-    background-color: #403f38; }
 
 /*# sourceMappingURL=main.css.map */
