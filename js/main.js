@@ -16,7 +16,8 @@ $(document).ready(function(){
     var widthSlide = $('.carousel ul li').width();
     console.log(widthSlide);
     console.log(widthSlide*numberSlides);
-    $('.carousel ul li').width(widthSlide);
+    $('.carousel ul li.active').width(widthSlide);
+    $('.carousel ul li.not-active').width(600);
     $('.carousel ul').width(numberSlides*widthSlide);
 
 
