@@ -12,5 +12,16 @@ $(document).ready(function(){
     });
 
 
+    var numberSlides = $('.carousel ul li').length;
+    var widthSlide = $('.carousel ul li').width();
+    console.log(widthSlide);
+    console.log(widthSlide*numberSlides);
+    $('.carousel ul li').width(widthSlide);
+    $('.carousel ul').width(numberSlides*widthSlide);
+
+
+
+
+
 
 });
