@@ -158,55 +158,58 @@ ul {
   .number-chosen-people .chosen {
     font-size: 20px; }
 
+/****progress-bar*****/
 .progress-bar {
-  padding: 20px 0;
-  overflow: hidden; }
-  .progress-bar .non-active:before {
-    content: "";
+  padding: 20px 0; }
+  .progress-bar .segment {
+    position: relative;
     float: left;
     display: block;
     width: 40px;
     height: 2px;
     background-color: #99a0af;
-    margin-top: 4px; }
-  .progress-bar .non-active:after {
-    content: "";
-    float: left;
-    display: block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: solid 2px #99a0af; }
-  .progress-bar .active:first-child:before {
-    display: none; }
-  .progress-bar .active:first-child:after {
-    display: none; }
-  .progress-bar .active:before {
-    content: "";
-    float: left;
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #8bbc07;
-    margin-top: 4px; }
-  .progress-bar .active:after {
-    content: "";
-    float: left;
-    display: block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    border: solid 2px #8bbc07; }
-  .progress-bar .first-circle {
-    float: left;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: solid 2px #99a0af; }
-  .progress-bar .first-circle.active {
-    border: solid 2px #8bbc07; }
+    margin-right: 10px; }
+    .progress-bar .segment:first-child:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 2px #99a0af;
+      top: 50%;
+      margin-top: -5px;
+      left: -10px; }
+    .progress-bar .segment:first-child.active::after {
+      border: solid 2px #8bbc07; }
+  .progress-bar .non-active {
+    background-color: #99a0af; }
+    .progress-bar .non-active:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 2px #99a0af;
+      top: 50%;
+      margin-top: -5px;
+      right: -10px; }
+  .progress-bar .active {
+    background-color: #8bbc07; }
+    .progress-bar .active:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: solid 2px #8bbc07;
+      top: 50%;
+      margin-top: -5px;
+      right: -10px; }
 
+/****end-progress-bar*****/
 .control-btns {
   width: 500px;
   margin: 0 auto;

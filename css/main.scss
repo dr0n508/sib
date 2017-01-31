@@ -228,69 +228,70 @@ ul {
 }
 
 
+/****progress-bar*****/
 
 .progress-bar {
   padding: 20px 0;
-  overflow: hidden;
+  .segment {
+    position: relative;
+    float: left;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #99a0af;
+    margin-right: 10px;
+    &:first-child {
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        border: solid 2px #99a0af;
+        top:50%;
+        margin-top: -5px;
+        left: -10px;
+      }
+    }
+    &:first-child.active::after {
+      border: solid 2px #8bbc07;
+    }
+  }
   .non-active {
+    background-color: #99a0af;
     &:before {
       content: "";
-      float: left;
-      display: block;
-      width: 40px;
-      height: 2px;
-      background-color: #99a0af;
-      margin-top: 4px;
-    }
-    &:after {
-      content: "";
-      float: left;
+      position: absolute;
       display: block;
       width: 6px;
       height: 6px;
       border-radius: 50%;
       border: solid 2px #99a0af;
+      top:50%;
+      margin-top: -5px;
+      right: -10px;
     }
   }
   .active {
-    &:first-child:before {
-      display: none;
-    }
-    &:first-child:after {
-      display: none;
-    }
+    background-color: #8bbc07;
     &:before {
       content: "";
-      float: left;
-      display: block;
-      width: 40px;
-      height: 2px;
-      background-color: #8bbc07;
-      margin-top: 4px;
-    }
-    &:after {
-      content: "";
-      float: left;
+      position: absolute;
       display: block;
       width: 6px;
       height: 6px;
       border-radius: 50%;
       border: solid 2px #8bbc07;
+      top:50%;
+      margin-top: -5px;
+      right: -10px;
     }
   }
-  .first-circle {
-    float: left;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: solid 2px #99a0af;
-  }
-  .first-circle.active {
-    border: solid 2px #8bbc07;
-  }
-
 }
+
+/****end-progress-bar*****/
+
 .control-btns {
   width: 500px;
   margin: 0 auto;
