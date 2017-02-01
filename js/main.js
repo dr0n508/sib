@@ -49,7 +49,7 @@ $(document).ready(function(){
 
         if ( $(".carousel ul li:last").hasClass("active") ) {
 
-            console.log('stop');
+            window.location.href = "results.html";
 
         }
         else  {
