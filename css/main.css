@@ -14,12 +14,16 @@
   font-family: "Agfa Rotis Sans Serif ExBd";
   src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot");
   src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff") format("woff"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.svg#Agfa Rotis Sans Serif ExBd") format("svg"); }
+html {
+  height: 100%; }
+
 body {
   padding: 0;
   margin: 0;
   font-family: "RotisSemiSerifHellenW15-Bd", arial, helvetica, sans-serif;
   font-size: 16px;
-  background: #f2f5f9; }
+  background: #f2f5f9;
+  height: 100%; }
 
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
@@ -291,5 +295,112 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         width: 100% !important;
         height: auto !important;
         border-radius: 5px; }
+
+/****new-browse-all-video*****/
+.wrap {
+  overflow: hidden; }
+  .wrap .video-fullscreen {
+    height: 100%;
+    width: 80%;
+    float: left; }
+    .wrap .video-fullscreen .videoWrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      .wrap .video-fullscreen .videoWrapper video {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        object-fit: cover;
+        -o-object-fit: cover;
+        -moz-object-fit: cover;
+        -m-object-fit: cover;
+        -webkit-object-fit: cover; }
+  .wrap .aside-header {
+    width: 20%;
+    float: right; }
+    .wrap .aside-header header {
+      background-color: #8bbc07;
+      padding: 40px 20px 80px; }
+      .wrap .aside-header header h1 {
+        color: white;
+        font-size: 60px; }
+      .wrap .aside-header header .description-text {
+        color: white;
+        padding-top: 20px;
+        font-size: 18px; }
+
+.w33 {
+  width: 33.333%;
+  float: left;
+  padding: 0 5px; }
+
+.wrap-aside {
+  padding: 10px; }
+  .wrap-aside .control-video-btns .main-btn {
+    width: 100%;
+    margin-bottom: 30px; }
+  .wrap-aside .control-video-btns i {
+    padding: 0 10px; }
+
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.list-videos {
+  overflow: hidden;
+  position: relative;
+  top: -30px;
+  margin-bottom: 30px; }
+  .list-videos li {
+    padding-bottom: 10px; }
+  .list-videos .wrap-item {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 66.7%;
+    height: 0;
+    border-radius: 5px;
+    z-index: 7; }
+    .list-videos .wrap-item:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 6; }
+    .list-videos .wrap-item video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .list-videos .wrap-item .number-video {
+      font-size: 46px;
+      font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+      color: white;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      z-index: 7;
+      top: 8px; }
+  .list-videos .counter-video {
+    border: solid 2px #99a0b0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 7; }
+    .list-videos .counter-video .number-video {
+      color: #82837e;
+      font-size: 32px;
+      padding-top: 12px; }
 
 /*# sourceMappingURL=main.css.map */
