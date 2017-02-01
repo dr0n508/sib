@@ -18,8 +18,24 @@ $(document).ready(function(){
 
     var numberSlides = $('.carousel ul li').length;
     var widthSlide = $('.carousel ul li').width();
+    var widthElementProgressBar = widthSlide/(numberSlides+1)-10;
+
+    var elementProgressBar = '<span class="segment" style="width: ' + widthElementProgressBar + 'px"></span>';
+
+    $('.segment').width(widthElementProgressBar);
+
+    for (i = 0; i < numberSlides; i++) {
+        $(elementProgressBar).appendTo('.progress-bar');
+    }
+
+
+
+
+
+
     console.log(widthSlide);
     console.log(widthSlide*numberSlides);
+    console.log(widthSlide/(numberSlides+1)-10);
     $('.carousel ul li.active').width(widthSlide);
     $('.carousel ul li.not-active').width(150);
     $('.carousel ul').width(numberSlides*widthSlide);
@@ -33,6 +49,8 @@ $(document).ready(function(){
 
         $(".carousel ul li.active").removeClass("active").animate({width: 150 +"px"}, 200).next('.carousel ul li').addClass('active').width(widthSlide);
         left = left + 155;
+        $(".progress-bar .segment.active").next('.progress-bar .segment').addClass('active');
+
     });
 
     /****pause video****/
