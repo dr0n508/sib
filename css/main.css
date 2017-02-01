@@ -40,7 +40,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 header {
   background-color: #8bbc07;
-  padding: 20px 0 20px;
+  padding: 20px 0 40px;
   color: white; }
   header .description-text {
     font-family: "RotisSansSerif";
@@ -50,7 +50,7 @@ header {
   height: 100%; }
 
 .wrap.first-page {
-  background: url("../img/logo.png") 90% 90% no-repeat;
+  background: url("../img/logo.png") 95% 95% no-repeat;
   background-size: 7%; }
 
 main {
