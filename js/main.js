@@ -58,8 +58,9 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '#repeat-video', function() {
-        console.log('repet video')
+        console.log('repet video');
         $('#i-see-video').prop('disabled', false);
+        $('#next-video').prop('disabled', true);
     });
 
 
