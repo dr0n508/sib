@@ -59,7 +59,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   width: 100%;
   margin: 0 auto;
   @media only screen and (min-width: 1200px) {
-    width: 970px;
+    width: 1140px;
   }
   //@media only screen and (max-width: 1200px) {
   //  width: 970px;
@@ -341,20 +341,36 @@ ul {
 .carousel {
   //overflow: hidden;
   ul {
-    li.active {
-
+    position: relative;
+    li.active .item .videoWrapper{
+      &:before {
+        display: none;
+      }
+      p {
+        display: none;
+      }
     }
-    li.not-active .item .videoWrapper {
+
+    li .item .videoWrapper {
       &:before {
         content: '';
         width: 100%;
         height: 100%;
-        background: rgba(255,255,255,.8);
+        background: rgba(255,255,255,.7);
         position: absolute;
         top:0;
         left: 0;
         z-index: 6;
         border-radius: 5px;
+      }
+      p {
+        font-size: 55px;
+        font-family: "Agfa Rotis Sans Serif ExBd";
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 7;
+        top: -5px;
       }
     }
     li {

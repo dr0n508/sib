@@ -36,7 +36,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   margin: 0 auto; }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 970px; } }
+      width: 1140px; } }
 
 header {
   background-color: #8bbc07;
@@ -237,35 +237,49 @@ ul {
 .wrap-btn.results {
   text-align: center; }
 
-.carousel ul li.not-active .item .videoWrapper:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 6;
-  border-radius: 5px; }
-.carousel ul li {
-  width: 100%;
-  display: inline-block; }
-  .carousel ul li .item {
+.carousel ul {
+  position: relative; }
+  .carousel ul li.active .item .videoWrapper:before {
+    display: none; }
+  .carousel ul li.active .item .videoWrapper p {
+    display: none; }
+  .carousel ul li .item .videoWrapper:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    border-radius: 5px; }
+  .carousel ul li .item .videoWrapper p {
+    font-size: 55px;
+    font-family: "Agfa Rotis Sans Serif ExBd";
+    color: white;
+    text-align: center;
     position: relative;
-    z-index: 5;
-    padding: 10px; }
-    .carousel ul li .item .videoWrapper {
+    z-index: 7;
+    top: -5px; }
+  .carousel ul li {
+    width: 100%;
+    display: inline-block; }
+    .carousel ul li .item {
       position: relative;
-      padding-bottom: 56.25%;
-      /* 16:9 */
-      padding-top: 25px;
-      height: 0; }
-    .carousel ul li .item .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px; }
+      z-index: 5;
+      padding: 10px; }
+      .carousel ul li .item .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0; }
+      .carousel ul li .item .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
 
 /*# sourceMappingURL=main.css.map */

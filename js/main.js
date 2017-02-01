@@ -26,17 +26,21 @@ $(document).ready(function(){
 
     var left = 150;
     $( "#i-see-video" ).click(function() {
-        $(".carousel ul").css('marginLeft', -left+'px');
-        $(".carousel ul li.active").removeClass("active").addClass('not-active').width(150).next('.carousel ul li').removeClass("not-active").addClass('active').width(widthSlide);
+        $(".carousel ul").animate({marginLeft: -left +"px"}, 200, function(){
+
+
+        });
+
+        $(".carousel ul li.active").removeClass("active").animate({width: 150 +"px"}, 200).next('.carousel ul li').addClass('active').width(widthSlide);
         left = left + 155;
     });
 
     /****pause video****/
-    $(document).on('click', '#close_vid', function() {
-        jQuery("iframe").each(function() {
-            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
-        });
-    });
+    // $(document).on('click', '#close_vid', function() {
+    //     jQuery("iframe").each(function() {
+    //         jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+    //     });
+    // });
 
 
 });
