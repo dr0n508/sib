@@ -151,6 +151,12 @@ ul {
   text-transform: uppercase;
   text-decoration: none; }
 
+button[disabled] {
+  background-color: #ced1d2; }
+
+button {
+  background-color: green; }
+
 .number-chosen-people {
   margin: 20px 0;
   color: #83837f;
