@@ -44,19 +44,22 @@ $(document).ready(function(){
 
 
     $(document).on('click', '#i-see-video', function() {
-
+        console.log('pause video');
         $('#next-video').prop('disabled', false);
         $('#repeat-video').prop('disabled', false);
         $('#i-see-video').prop('disabled', true);
-
     });
 
     $(document).on('click', '#next-video', function() {
-
         $('#repeat-video').prop('disabled', true);
         $('#next-video').prop('disabled', true);
         $('#i-see-video').prop('disabled', false);
 
+    });
+
+    $(document).on('click', '#repeat-video', function() {
+        console.log('repet video')
+        $('#i-see-video').prop('disabled', false);
     });
 
 

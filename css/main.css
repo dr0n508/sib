@@ -142,20 +142,25 @@ ul {
   text-decoration: none;
   background-color: #ced1d2; }
 
-.main-btn.active {
-  background-color: #403f38; }
+.main-btn {
+  background-color: #403f38;
+  outline: none;
+  border: none; }
+
+.main-btn[disabled] {
+  background-color: #ced1d2; }
 
 .lite-btn {
   font-family: "Agfa Rotis Sans Serif ExBd";
   color: #83837f;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: none; }
 
-button[disabled] {
-  background-color: #ced1d2; }
-
-button {
-  background-color: green; }
+.lite-btn[disabled] {
+  color: #ced1d2; }
 
 .number-chosen-people {
   margin: 20px 0;
@@ -218,8 +223,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .control-btns .main-btn {
-    padding: 15px 50px; }
   .control-btns i {
     padding: 0 10px; }
 

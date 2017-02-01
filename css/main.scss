@@ -207,8 +207,14 @@ ul {
   text-decoration: none;
   background-color: #ced1d2;
 }
-.main-btn.active {
+.main-btn {
   background-color: #403f38;
+  outline: none;
+  border: none;
+}
+
+.main-btn[disabled] {
+  background-color: #ced1d2;
 }
 
 .lite-btn {
@@ -216,15 +222,14 @@ ul {
   color: #83837f;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+.lite-btn[disabled] {
+  color: #ced1d2;
 }
 
-button[disabled] {
-  background-color: #ced1d2;
-}
-
-button {
-  background-color: green;
-}
 
 .number-chosen-people {
   margin: 20px 0;
@@ -302,10 +307,6 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .main-btn {
-    padding: 15px 50px;
-
-  }
   i {
     padding: 0 10px;
   }
