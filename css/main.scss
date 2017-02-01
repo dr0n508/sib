@@ -125,7 +125,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
-header {
+.main-header {
   background-color: #8bbc07;
   padding: 20px 0 40px;
   color: white;
@@ -135,11 +135,15 @@ header {
   }
 }
 
+.aside-header {
+
+}
+
 .wrap {
   height: 100%;
 }
 
-main {
+.main {
   overflow: hidden;
   padding: 50px;
 }
@@ -387,7 +391,8 @@ main {
         font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
         color: white;
         text-align: center;
-        position: relative;
+        width: 100%;
+        position: absolute;
         z-index: 7;
         top: -5px;
       }
@@ -400,17 +405,13 @@ main {
         z-index: 5;
         padding: 10px;
         .videoWrapper {
-          position: relative;
-          padding-bottom: 56.25%; /* 16:9 */
-          padding-top: 25px;
-          height: 0;
-        }
-        .videoWrapper iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
           width: 100%;
-          height: 100%;
+          height: auto;
+          position: relative;
+        }
+        .videoWrapper video {
+          width: 100% !important;
+          height: auto !important;
           border-radius: 5px;
         }
       }

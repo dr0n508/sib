@@ -82,18 +82,18 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background: url("../img/logo.png") no-repeat 50% 50%;
   background-size: 100%; }
 
-header {
+.main-header {
   background-color: #8bbc07;
   padding: 20px 0 40px;
   color: white; }
-  header .description-text {
+  .main-header .description-text {
     font-family: "RotisSansSerif", arial, helvetica, sans-serif;
     font-size: 14px; }
 
 .wrap {
   height: 100%; }
 
-main {
+.main {
   overflow: hidden;
   padding: 50px; }
 
@@ -272,7 +272,8 @@ main {
     font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
     color: white;
     text-align: center;
-    position: relative;
+    width: 100%;
+    position: absolute;
     z-index: 7;
     top: -5px; }
   .carousel ul li {
@@ -283,17 +284,12 @@ main {
       z-index: 5;
       padding: 10px; }
       .carousel ul li .item .videoWrapper {
-        position: relative;
-        padding-bottom: 56.25%;
-        /* 16:9 */
-        padding-top: 25px;
-        height: 0; }
-      .carousel ul li .item .videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
+        height: auto;
+        position: relative; }
+      .carousel ul li .item .videoWrapper video {
+        width: 100% !important;
+        height: auto !important;
         border-radius: 5px; }
 
 /*# sourceMappingURL=main.css.map */

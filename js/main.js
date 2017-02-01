@@ -44,10 +44,11 @@ $(document).ready(function(){
 
     $(document).on('click', '#i-see-video', function() {
 
+        $('.carousel .active video').get(0).pause();
 
         console.log('pause video');
 
-            $('.carousel .active .videoWrapper iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
 
         $('#next-video').prop('disabled', false);
         $('#repeat-video').prop('disabled', false);
@@ -63,7 +64,8 @@ $(document).ready(function(){
 
     $(document).on('click', '#repeat-video', function() {
         console.log('repeat video');
-        $('.carousel .active .videoWrapper iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+        $('.carousel .active video').get(0).play();
+
         $('#i-see-video').prop('disabled', false);
         $('#next-video').prop('disabled', true);
     });
