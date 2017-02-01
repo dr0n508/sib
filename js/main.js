@@ -32,24 +32,42 @@ $(document).ready(function(){
 
 
 
-
-    console.log(widthSlide);
-    console.log(widthSlide*numberSlides);
-    console.log(widthSlide/(numberSlides+1)-10);
+    //
+    // console.log(widthSlide);
+    // console.log(widthSlide*numberSlides);
+    // console.log(widthSlide/(numberSlides+1)-10);
     $('.carousel ul li').width(150);
     $('.carousel ul li.active').width(widthSlide);
     $('.carousel ul').width(numberSlides*widthSlide);
 
     var left = 150;
     $( "#i-see-video" ).click(function() {
-        $(".carousel ul").animate({marginLeft: -left +"px"}, 200, function(){
 
 
-        });
 
-        $(".carousel ul li.active").removeClass("active").animate({width: 150 +"px"}, 200).next('.carousel ul li').addClass('active').width(widthSlide);
-        left = left + 155;
-        $(".progress-bar .segment.active").next('.progress-bar .segment').addClass('active');
+
+
+        if ( $(".carousel ul li:last").hasClass("active") ) {
+
+            console.log('stop');
+
+        }
+        else  {
+            $(".carousel ul").animate({marginLeft: -left +"px"}, 200, function(){
+
+
+            });
+
+            $(".carousel ul li.active").removeClass("active").animate({width: 150 +"px"}, 200).next('.carousel ul li').addClass('active').width(widthSlide);
+            left = left + 155;
+            $(".progress-bar .segment.active").next('.progress-bar .segment').addClass('active');
+        }
+
+
+
+
+
+
 
     });
 
