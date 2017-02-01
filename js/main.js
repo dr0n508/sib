@@ -42,7 +42,6 @@ $(document).ready(function(){
 
     var left = 150;
 
-
     $(document).on('click', '#i-see-video', function() {
         console.log('pause video');
         $('#next-video').prop('disabled', false);
@@ -58,25 +57,17 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '#repeat-video', function() {
-        console.log('repet video');
+        console.log('repeat video');
         $('#i-see-video').prop('disabled', false);
         $('#next-video').prop('disabled', true);
     });
 
 
-
-
-
-
     $( "#next-video" ).click(function() {
-
         if ( $(".carousel ul li:last").hasClass("active") ) {
-
             window.location.href = "results.html";
-
         }
         else  {
-
             $(".carousel ul").animate({marginLeft: -left +"px"}, 200, function(){
             });
             $(".carousel ul li.active").removeClass("active").animate({width: 150 +"px"}, 200).next('.carousel ul li').addClass('active').width(widthSlide);
@@ -87,7 +78,7 @@ $(document).ready(function(){
     });
 
     /****pause video****/
-    $(document).on('click', '#repeat', function() {
+    $(document).on('click', '#repeat-video', function() {
         jQuery("iframe").each(function() {
             jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
         });
