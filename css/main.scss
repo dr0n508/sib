@@ -73,6 +73,20 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   //}
 }
 
+.first-page {
+  &:after {
+    content: '';
+    position: fixed;
+    display: block;
+    bottom: 30px;
+    right: 30px;
+    width: 150px;
+    height: 50px;
+    background: url("../img/logo.png") no-repeat 50% 50%;
+    background-size: 100%;
+  }
+}
+
 header {
   background-color: #8bbc07;
   padding: 20px 0 40px;
@@ -85,68 +99,58 @@ header {
 
 .wrap {
   height: 100%;
-
-
-}
-.wrap.first-page {
-  background: url("../img/logo.png") 95% 95% no-repeat ;
-  background-size: 7%;
 }
 
 main {
   overflow: hidden;
   padding: 50px;
-
 }
-ul {
+
+.list-device-classification {
   overflow: hidden;
   .w50 {
     width: 50%;
     padding-right: 15px;
     float: left;
   }
-}
+  .item {
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    .wrap-img {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    .wrap-text {
+      padding: 40px 30px 50px;
+      background-color: white;
+      h2 {
+        color: #546c79;
+        padding-bottom: 10px;
 
-.item {
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  .wrap-img {
-    img {
-      width: 100%;
-      height: auto;
+      }
+      p {
+        font-family: "RotisSansSerif";
+        color: #90a2ac;
+      }
+    }
+    .btn-select {
       display: block;
-    }
-  }
-  .wrap-text {
-    padding: 40px 30px 50px;
-    background-color: white;
-    h2 {
-      color: #546c79;
-      padding-bottom: 10px;
-
-    }
-    p {
-      font-family: "RotisSansSerif";
-      color: #90a2ac;
-    }
-  }
-
-
-  .btn-select {
-    display: block;
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #403f38;
-    &:hover {
-      background-color: #83837f;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: #403f38;
+      &:hover {
+        background-color: #83837f;
+      }
     }
   }
 }
-
 
 /*************/
 
