@@ -18,13 +18,13 @@ $(document).ready(function(){
 
     var numberSlides = $('.carousel ul li').length;
     var widthSlide = $('.carousel ul li').width();
-    var widthElementProgressBar = widthSlide/(numberSlides+1)-10;
+    var widthElementProgressBar = widthSlide/(numberSlides)-10;
 
     var elementProgressBar = '<span class="segment" style="width: ' + widthElementProgressBar + 'px"></span>';
 
     $('.segment').width(widthElementProgressBar);
 
-    for (i = 0; i < numberSlides; i++) {
+    for (i = 0; i < numberSlides-1; i++) {
         $(elementProgressBar).appendTo('.progress-bar');
     }
 
@@ -36,8 +36,8 @@ $(document).ready(function(){
     console.log(widthSlide);
     console.log(widthSlide*numberSlides);
     console.log(widthSlide/(numberSlides+1)-10);
+    $('.carousel ul li').width(150);
     $('.carousel ul li.active').width(widthSlide);
-    $('.carousel ul li.not-active').width(150);
     $('.carousel ul').width(numberSlides*widthSlide);
 
     var left = 150;
