@@ -3,10 +3,6 @@
   src: url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.eot");
   src: url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.woff") format("woff"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.svg#RotisSemiSerifHellenW15-Bd") format("svg"); }
 @font-face {
-  font-family: "ATRotisSansSerif";
-  src: url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.eot");
-  src: url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4fed193a90da7f032596e2e6764dac8c.svg#ATRotisSansSerif") format("svg"); }
-@font-face {
   font-family: "RotisSansSerif";
   src: url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.eot");
   src: url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.woff") format("woff"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.svg#RotisSansSerif") format("svg"); }
@@ -137,7 +133,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 /******chose3person****/
 .list-persons {
-  overflow: hidden;
   position: relative;
   margin-top: -30px; }
   .list-persons .w25 {
@@ -190,8 +185,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   color: #f2ae0c;
   border: solid 3px #f2ae0c; }
 
-/****progress-bar*****/
-/****end-progress-bar*****/
 /****table****/
 .table-results {
   border-collapse: collapse;
@@ -318,5 +311,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       color: #82837e;
       font-size: 32px;
       padding-top: 12px; }
+
+.magictime {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
 
 /*# sourceMappingURL=main.css.map */
