@@ -31,6 +31,39 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+/*****btn****/
+.main-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: #403f38;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.main-btn[disabled] {
+  background-color: #ced1d2;
+  cursor: default; }
+
+.lite-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+  color: #83837f;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: auto; }
+
+.lite-btn[disabled] {
+  color: #ced1d2;
+  cursor: default; }
+
+/***end-btn*****/
 .container {
   width: 100%;
   margin: 0 auto; }
@@ -54,7 +87,7 @@ header {
   padding: 20px 0 40px;
   color: white; }
   header .description-text {
-    font-family: "RotisSansSerif";
+    font-family: "RotisSansSerif", arial, helvetica, sans-serif;
     font-size: 14px; }
 
 .wrap {
@@ -85,7 +118,7 @@ main {
         color: #546c79;
         padding-bottom: 10px; }
       .list-device-classification .item .wrap-text p {
-        font-family: "RotisSansSerif";
+        font-family: "RotisSansSerif", arial, helvetica, sans-serif;
         color: #90a2ac; }
     .list-device-classification .item .btn-select {
       display: block;
@@ -98,13 +131,12 @@ main {
       .list-device-classification .item .btn-select:hover {
         background-color: #83837f; }
 
-/*************/
-.w25 {
+/******chose3person****/
+.list-persons .w25 {
   width: 25%;
   float: left;
   padding: 5px; }
-
-.item-person {
+.list-persons .item-person {
   height: 120px;
   background: url("../img/man.jpg");
   background-size: cover;
@@ -112,17 +144,14 @@ main {
   position: relative;
   overflow: hidden;
   cursor: pointer; }
-
-.item-person.check .hover {
+.list-persons .item-person.check .hover {
   display: block; }
-
-.item-person.not-check .hover {
+.list-persons .item-person.not-check .hover {
   display: block;
   background-color: rgba(255, 255, 255, 0.65); }
-  .item-person.not-check .hover p {
+  .list-persons .item-person.not-check .hover p {
     display: none; }
-
-.hover {
+.list-persons .hover {
   display: none;
   width: 100%;
   height: 100%;
@@ -134,39 +163,9 @@ main {
   color: white;
   font-size: 36px;
   font-weight: 600; }
-  .hover p {
+  .list-persons .hover p {
     margin-top: 32px;
-    font-family: "Agfa Rotis Sans Serif ExBd"; }
-
-.main-btn {
-  font-family: "Agfa Rotis Sans Serif ExBd";
-  display: inline-block;
-  text-transform: uppercase;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 25px;
-  text-decoration: none;
-  background-color: #ced1d2; }
-
-.main-btn {
-  background-color: #403f38;
-  outline: none;
-  border: none; }
-
-.main-btn[disabled] {
-  background-color: #ced1d2; }
-
-.lite-btn {
-  font-family: "Agfa Rotis Sans Serif ExBd";
-  color: #83837f;
-  text-transform: uppercase;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  background: none; }
-
-.lite-btn[disabled] {
-  color: #ced1d2; }
+    font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif; }
 
 .number-chosen-people {
   margin: 20px 0;
@@ -239,15 +238,15 @@ main {
   margin: 50px 0; }
   .table-results thead tr td {
     text-transform: uppercase;
-    font-family: "RotisSansSerif";
+    font-family: "RotisSansSerif", arial, helvetica, sans-serif;
     color: #99a0af;
     font-size: 14px; }
   .table-results tbody tr td {
-    font-family: "Agfa Rotis Sans Serif ExBd";
+    font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
     font-size: 30px;
     padding: 10px 0; }
   .table-results tbody tr .number-td {
-    font-family: "RotisSansSerif"; }
+    font-family: "RotisSansSerif", arial, helvetica, sans-serif; }
 
 .wrap-btn.results {
   text-align: center; }
@@ -270,7 +269,7 @@ main {
     border-radius: 5px; }
   .carousel ul li .item .videoWrapper p {
     font-size: 55px;
-    font-family: "Agfa Rotis Sans Serif ExBd";
+    font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
     color: white;
     text-align: center;
     position: relative;

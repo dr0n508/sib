@@ -55,6 +55,44 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   -moz-box-sizing: border-box;
 }
 
+
+/*****btn****/
+.main-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  background-color: #403f38;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-btn[disabled] {
+  background-color: #ced1d2;
+  cursor: default;
+}
+
+.lite-btn {
+  font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+  color: #83837f;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: auto;
+}
+.lite-btn[disabled] {
+  color: #ced1d2;
+  cursor: default;
+}
+
+/***end-btn*****/
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -92,7 +130,7 @@ header {
   padding: 20px 0 40px;
   color: white;
   .description-text {
-    font-family: "RotisSansSerif";
+    font-family: "RotisSansSerif", arial, helvetica, sans-serif;
     font-size: 14px;
   }
 }
@@ -133,7 +171,7 @@ main {
 
       }
       p {
-        font-family: "RotisSansSerif";
+        font-family: "RotisSansSerif", arial, helvetica, sans-serif;
         color: #90a2ac;
       }
     }
@@ -152,88 +190,56 @@ main {
   }
 }
 
-/*************/
+/******chose3person****/
 
-.w25 {
-  width: 25%;
-  float: left;
-  padding: 5px;
-}
+.list-persons {
+  .w25 {
+    width: 25%;
+    float: left;
+    padding: 5px;
+  }
 
-.item-person {
-  height: 120px;
-  background: url("../img/man.jpg");
-  background-size: cover;
-  border-radius: 3px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
+  .item-person {
+    height: 120px;
+    background: url("../img/man.jpg");
+    background-size: cover;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
 
-.item-person.check .hover {
-  display: block;
-}
+  .item-person.check .hover {
+    display: block;
+  }
 
-.item-person.not-check .hover {
-  display: block;
-  background-color: rgba(255,255,255,.65);
-  p {
+  .item-person.not-check .hover {
+    display: block;
+    background-color: rgba(255,255,255,.65);
+    p {
+      display: none;
+    }
+  }
+
+  .hover {
     display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,.65);
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    p {
+      margin-top: 32px;
+      font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+      //font-size: 16px;
+    }
   }
 }
-
-.hover {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top:0;
-  left: 0;
-  background-color: rgba(0,0,0,.65);
-  text-align: center;
-  color: white;
-  font-size: 36px;
-  font-weight: 600;
-  p {
-    margin-top: 32px;
-    font-family: "Agfa Rotis Sans Serif ExBd";
-    //font-size: 16px;
-  }
-}
-
-.main-btn {
-  font-family: "Agfa Rotis Sans Serif ExBd";
-  display: inline-block;
-  text-transform: uppercase;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 25px;
-  text-decoration: none;
-  background-color: #ced1d2;
-}
-.main-btn {
-  background-color: #403f38;
-  outline: none;
-  border: none;
-}
-
-.main-btn[disabled] {
-  background-color: #ced1d2;
-}
-
-.lite-btn {
-  font-family: "Agfa Rotis Sans Serif ExBd";
-  color: #83837f;
-  text-transform: uppercase;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  background: none;
-}
-.lite-btn[disabled] {
-  color: #ced1d2;
-}
-
 
 .number-chosen-people {
   margin: 20px 0;
@@ -327,7 +333,7 @@ main {
     tr {
       td {
         text-transform: uppercase;
-        font-family: "RotisSansSerif";
+        font-family: "RotisSansSerif", arial, helvetica, sans-serif;
         color: #99a0af;
         font-size: 14px;
       }
@@ -336,12 +342,12 @@ main {
   tbody {
     tr {
       td {
-        font-family: "Agfa Rotis Sans Serif ExBd";
+        font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
         font-size: 30px;
         padding: 10px 0;
       }
       .number-td {
-        font-family: "RotisSansSerif";
+        font-family: "RotisSansSerif", arial, helvetica, sans-serif;
       }
     }
   }
@@ -378,7 +384,7 @@ main {
       }
       p {
         font-size: 55px;
-        font-family: "Agfa Rotis Sans Serif ExBd";
+        font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
         color: white;
         text-align: center;
         position: relative;
