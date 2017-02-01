@@ -43,7 +43,12 @@ $(document).ready(function(){
     var left = 150;
 
     $(document).on('click', '#i-see-video', function() {
+
+
         console.log('pause video');
+
+            $('.carousel .active .videoWrapper iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
         $('#next-video').prop('disabled', false);
         $('#repeat-video').prop('disabled', false);
         $('#i-see-video').prop('disabled', true);
@@ -58,6 +63,7 @@ $(document).ready(function(){
 
     $(document).on('click', '#repeat-video', function() {
         console.log('repeat video');
+        $('.carousel .active .videoWrapper iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
         $('#i-see-video').prop('disabled', false);
         $('#next-video').prop('disabled', true);
     });
@@ -77,12 +83,6 @@ $(document).ready(function(){
 
     });
 
-    /****pause video****/
-    $(document).on('click', '#repeat-video', function() {
-        jQuery("iframe").each(function() {
-            jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
-        });
-    });
 
 
 
