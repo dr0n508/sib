@@ -11,44 +11,19 @@ $(document).ready(function(){
         $(".item-person.check").addClass("zoomOutRight");
     });
 
+    /***video***/
 
+    var vid = document.getElementById("main-video");
+    vid.onplay = function() {
+        $('#i-see-video').prop('disabled', false);
+    };
 
-    /***slider***/
-
-
-    var numberSlides = $('.carousel ul li').length;
-    var widthSlide = $('.carousel ul li').width();
-    var widthElementProgressBar = widthSlide/(numberSlides)-10;
-
-    var elementProgressBar = '<span class="segment" style="width: ' + widthElementProgressBar + 'px"></span>';
-
-    $('.segment').width(widthElementProgressBar);
-
-    for (i = 0; i < numberSlides-1; i++) {
-        $(elementProgressBar).appendTo('.progress-bar');
-    }
-
-
-
-
-
-    //
-    // console.log(widthSlide);
-    // console.log(widthSlide*numberSlides);
-    // console.log(widthSlide/(numberSlides+1)-10);
-    $('.carousel ul li').width(150);
-    $('.carousel ul li.active').width(widthSlide);
-    $('.carousel ul').width(numberSlides*widthSlide);
-
-    var left = 150;
+    $(document).on('click', '#main-video', function() {
+        $('#main-video').get(0).play();
+    });
 
     $(document).on('click', '#i-see-video', function() {
-
-        $('.carousel .active video').get(0).pause();
-
-        console.log('pause video');
-
-
+        $('#main-video').get(0).pause();
 
         $('#next-video').prop('disabled', false);
         $('#repeat-video').prop('disabled', false);
@@ -58,35 +33,19 @@ $(document).ready(function(){
     $(document).on('click', '#next-video', function() {
         $('#repeat-video').prop('disabled', true);
         $('#next-video').prop('disabled', true);
-        $('#i-see-video').prop('disabled', false);
-
+        $('#i-see-video').prop('disabled', true);
+        alert('грузим другое видео')
     });
 
     $(document).on('click', '#repeat-video', function() {
         console.log('repeat video');
-        $('.carousel .active video').get(0).play();
-
+        $('#main-video').get(0).play();
         $('#i-see-video').prop('disabled', false);
         $('#next-video').prop('disabled', true);
     });
 
 
-    $( "#next-video" ).click(function() {
-        if ( $(".carousel ul li:last").hasClass("active") ) {
-            window.location.href = "results.html";
-        }
-        else  {
-            $(".carousel ul").animate({marginLeft: -left +"px"}, 200, function(){
-            });
-            $(".carousel ul li.active").removeClass("active").animate({width: 150 +"px"}, 200).next('.carousel ul li').addClass('active').width(widthSlide);
-            left = left + 155;
-            $(".progress-bar .segment.active").next('.progress-bar .segment').addClass('active');
-        }
-
-    });
-
-
-    /****одинаковая высота****/
+    /****same height video and counter thumbnail****/
     maintainSameHeight($('[data-same-height="video"]'));
 
     function maintainSameHeight($list) {
@@ -101,6 +60,7 @@ $(document).ready(function(){
 
         $list.css("height", height);
     }
+    /******/
 
 
 
