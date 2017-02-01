@@ -88,21 +88,21 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 .main-header {
   background-color: #8bbc07;
-  padding: 20px 0 40px;
+  padding: 20px 0 70px;
   color: white; }
+  .main-header h1 {
+    font-size: 60px; }
   .main-header .description-text {
     font-family: "RotisSansSerif", arial, helvetica, sans-serif;
-    font-size: 14px; }
+    font-size: 18px; }
 
 .wrap {
   height: 100%; }
 
-.main {
-  overflow: hidden;
-  padding: 50px; }
-
 .list-device-classification {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  top: -30px; }
   .list-device-classification .w50 {
     width: 50%;
     padding-right: 15px;
@@ -116,11 +116,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       height: auto;
       display: block; }
     .list-device-classification .item .wrap-text {
-      padding: 40px 30px 50px;
+      padding: 50px 30px 60px;
       background-color: white; }
       .list-device-classification .item .wrap-text h2 {
         color: #546c79;
-        padding-bottom: 10px; }
+        padding-bottom: 20px; }
       .list-device-classification .item .wrap-text p {
         font-family: "RotisSansSerif", arial, helvetica, sans-serif;
         color: #90a2ac; }
@@ -136,40 +136,44 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         background-color: #83837f; }
 
 /******chose3person****/
-.list-persons .w25 {
-  width: 25%;
-  float: left;
-  padding: 5px; }
-.list-persons .item-person {
-  height: 120px;
-  background: url("../img/man.jpg");
-  background-size: cover;
-  border-radius: 3px;
-  position: relative;
+.list-persons {
   overflow: hidden;
-  cursor: pointer; }
-.list-persons .item-person.check .hover {
-  display: block; }
-.list-persons .item-person.not-check .hover {
-  display: block;
-  background-color: rgba(255, 255, 255, 0.65); }
-  .list-persons .item-person.not-check .hover p {
-    display: none; }
-.list-persons .hover {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.65);
-  text-align: center;
-  color: white;
-  font-size: 36px;
-  font-weight: 600; }
-  .list-persons .hover p {
-    margin-top: 32px;
-    font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif; }
+  position: relative;
+  margin-top: -30px; }
+  .list-persons .w25 {
+    width: 25%;
+    float: left;
+    padding: 5px; }
+  .list-persons .item-person {
+    height: 120px;
+    background: url("../img/man.jpg");
+    background-size: cover;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+  .list-persons .item-person.check .hover {
+    display: block; }
+  .list-persons .item-person.not-check .hover {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.65); }
+    .list-persons .item-person.not-check .hover p {
+      display: none; }
+  .list-persons .hover {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600; }
+    .list-persons .hover p {
+      margin-top: 32px;
+      font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif; }
 
 .number-chosen-people {
   margin: 20px 0;
@@ -186,55 +190,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   border: solid 3px #f2ae0c; }
 
 /****progress-bar*****/
-.progress-bar {
-  padding: 20px 0; }
-  .progress-bar .segment {
-    position: relative;
-    float: left;
-    display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #99a0af;
-    margin-right: 10px; }
-    .progress-bar .segment:before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      border: solid 2px #99a0af;
-      top: 50%;
-      margin-top: -5px;
-      right: -10px; }
-    .progress-bar .segment:first-child:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      border: solid 2px #99a0af;
-      top: 50%;
-      margin-top: -5px;
-      left: -10px; }
-    .progress-bar .segment:first-child.active::after {
-      border: solid 2px #8bbc07; }
-  .progress-bar .active {
-    background-color: #8bbc07; }
-    .progress-bar .active:before {
-      border: solid 2px #8bbc07; }
-
 /****end-progress-bar*****/
-.control-btns {
-  width: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .control-btns i {
-    padding: 0 10px; }
-
 /****table****/
 .table-results {
   border-collapse: collapse;
@@ -254,47 +210,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 .wrap-btn.results {
   text-align: center; }
-
-.carousel ul {
-  position: relative; }
-  .carousel ul li.active .item .videoWrapper:before {
-    display: none; }
-  .carousel ul li.active .item .videoWrapper p {
-    display: none; }
-  .carousel ul li .item .videoWrapper:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 6;
-    border-radius: 5px; }
-  .carousel ul li .item .videoWrapper p {
-    font-size: 55px;
-    font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    z-index: 7;
-    top: -5px; }
-  .carousel ul li {
-    width: 100%;
-    display: inline-block; }
-    .carousel ul li .item {
-      position: relative;
-      z-index: 5;
-      padding: 10px; }
-      .carousel ul li .item .videoWrapper {
-        width: 100%;
-        height: auto;
-        position: relative; }
-      .carousel ul li .item .videoWrapper video {
-        width: 100% !important;
-        height: auto !important;
-        border-radius: 5px; }
 
 /****new-browse-all-video*****/
 .wrap {
