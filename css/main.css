@@ -249,6 +249,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     height: 100%;
     width: calc(100% - 420px);
     float: left; }
+    @media only screen and (max-width: 1400px) {
+      .wrap-video-page .video-fullscreen {
+        width: calc(100% - 350px); } }
     .wrap-video-page .video-fullscreen .logo {
       position: fixed;
       width: 150px;
@@ -280,7 +283,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       background-color: #8bbc07;
       padding: 50px 30px 70px; }
       .wrap-video-page .aside-header header h1 {
-        font-family: 'RotisSemiSerifPro-Bold';
+        font-family: 'RotisSemiSerifPro-Bold', arial, helvetica, sans-serif;
         color: white;
         font-size: 66px;
         line-height: 60px; }
@@ -292,14 +295,16 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         letter-spacing: 1px;
         line-height: 30px; }
     @media only screen and (max-width: 1400px) {
-      .wrap-video-page .aside-header header {
-        padding: 20px 20px 50px; }
-        .wrap-video-page .aside-header header h1 {
-          font-size: 40px; }
-        .wrap-video-page .aside-header header .description-text {
-          color: white;
-          padding-top: 16px;
-          font-size: 18px; } }
+      .wrap-video-page .aside-header {
+        width: 350px; }
+        .wrap-video-page .aside-header header {
+          padding: 20px 20px 30px; }
+          .wrap-video-page .aside-header header h1 {
+            font-size: 40px; }
+          .wrap-video-page .aside-header header .description-text {
+            color: white;
+            padding-top: 16px;
+            font-size: 18px; } }
 
 .w33 {
   width: 33.333%;
@@ -315,6 +320,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     position: fixed;
     bottom: 40px;
     right: 0; }
+    @media only screen and (max-width: 1400px) {
+      .wrap-aside .control-video-btns {
+        width: 340px; } }
     .wrap-aside .control-video-btns .main-btn {
       width: 100%;
       margin-bottom: 30px;
