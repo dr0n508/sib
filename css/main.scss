@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'PhonakRotis-Bold';
+  src: url('../fonts/PhonakRotis-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/PhonakRotis-Bold.woff') format('woff'), url('../fonts/PhonakRotis-Bold.ttf')  format('truetype'), url('../fonts/PhonakRotis-Bold.svg#PhonakRotis-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'RotisSemiSerifPro-Bold';
   src: url('../fonts/RotisSemiSerifPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/RotisSemiSerifPro-Bold.otf')  format('opentype'),
   url('../fonts/RotisSemiSerifPro-Bold.woff') format('woff'), url('../fonts/RotisSemiSerifPro-Bold.ttf')  format('truetype'), url('../fonts/RotisSemiSerifPro-Bold.svg#RotisSemiSerifPro-Bold') format('svg');
@@ -37,14 +44,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'RotisSansSerif-ExtraBold';
-  src: url('../fonts/RotisSansSerif-ExtraBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/RotisSansSerif-ExtraBold.otf')  format('opentype'),
-  url('../fonts/RotisSansSerif-ExtraBold.woff') format('woff'), url('../fonts/RotisSansSerif-ExtraBold.ttf')  format('truetype'), url('../fonts/RotisSansSerif-ExtraBold.svg#RotisSansSerif-ExtraBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
   //height: 100%;
 }
@@ -73,7 +72,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 
 /*****btn****/
 .main-btn {
-  font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
+  font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
   display: inline-block;
   text-transform: uppercase;
   color: white;
@@ -190,6 +189,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
       }
     }
     .btn-select {
+      font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
       display: block;
       padding: 20px 0;
       text-align: center;
@@ -256,7 +256,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     font-size: 46px;
     font-weight: 600;
     p {
-      font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
+      font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
       position: absolute;
       width: 100%;
       top: 50%;
@@ -300,7 +300,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   tbody {
     tr {
       td {
-        font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
+        font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
         font-size: 30px;
         padding: 10px 0;
       }
@@ -454,7 +454,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     }
     .number-video {
       font-size: 46px;
-      font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
+      font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
       color: white;
       text-align: center;
       width: 100%;
@@ -472,7 +472,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     z-index: 7;
     .number-video {
       width: 100%;
-      font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
+      font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
       color: #83847f;
       font-size: 28px;
       position: absolute;
