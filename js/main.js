@@ -33,12 +33,14 @@ $(document).ready(function(){
         }
     });
 
-
-
-
     $( "#start-test" ).click(function() {
-        $(".item-person.not-check").addClass("magictime rotateRight");
-        $(".item-person.check").addClass("magictime bombRightOut");
+        $(".item-person.not-check").addClass("animated fadeOutLeft");
+        setTimeout(function(){
+            $('.item-person.check').addClass('animated bounce');
+        }, 1000);
+        setTimeout(function(){
+            $('.item-person.check').addClass('animated fadeOutRight');
+        }, 2000);
     });
 
     /***video***/
