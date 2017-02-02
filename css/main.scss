@@ -233,18 +233,24 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 
   .item-person.check .hover {
-    display: block;
+    //display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
   .item-person.not-check .hover {
-    display: block;
+    visibility: visible;
+    opacity: 1;
     background-color: rgba(255,255,255,.65);
     p {
       display: none;
     }
+
   }
   .hover {
-    display: none;
+    //display: none;
+    visibility: hidden;
+    opacity: 0;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -255,6 +261,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     color: white;
     font-size: 46px;
     font-weight: 600;
+    transition: visibility 0s, opacity 0.2s linear;
     p {
       font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
       position: absolute;

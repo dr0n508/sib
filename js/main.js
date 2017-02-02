@@ -20,6 +20,8 @@ $(document).ready(function(){
             $(this).addClass("check");
             if ($(".item-person.check").length == 3) {
                 $('#start-test').prop('disabled', false);
+                $('.number-chosen-people').addClass("ready");
+
                 $( ".item-person" ).each(function(i,elem) {
                     if ($(this).hasClass("check")) {
 
