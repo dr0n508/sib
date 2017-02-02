@@ -1,9 +1,37 @@
 $(document).ready(function(){
 
     $( "li .item" ).click(function() {
-        $("li .item.left").addClass("magictime rotateLeft");
-        $("li .item.right").addClass("magictime rotateRight");
+        $("li .item.left").addClass("animated fadeOutLeft");
+        setTimeout(function(){
+            $('li .item.right').addClass('animated bounce');
+        }, 1000);
+        setTimeout(function(){
+            $('li .item.right').addClass('animated fadeOutRight');
+        }, 2000);
     });
+
+
+/****chose-3-persons****/
+
+    $( ".item-person" ).click(function() {
+        if ($(".item-person.check").length == 3) {
+
+        } else {
+            $(this).addClass("check");
+            if ($(".item-person.check").length == 3) {
+                $('#start-test').prop('disabled', false);
+                $( ".item-person" ).each(function(i,elem) {
+                    if ($(this).hasClass("check")) {
+
+                    } else {
+                        $(this).addClass("not-check");
+                    }
+                });
+            }
+        }
+    });
+
+
 
 
     $( "#start-test" ).click(function() {
