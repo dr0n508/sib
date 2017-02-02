@@ -322,7 +322,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     right: 0; }
     @media only screen and (max-width: 1400px) {
       .wrap-aside .control-video-btns {
-        width: 340px; } }
+        width: 340px;
+        bottom: 20px; } }
     .wrap-aside .control-video-btns .main-btn {
       width: 100%;
       margin-bottom: 30px;
