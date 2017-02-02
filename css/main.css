@@ -10,16 +10,12 @@
   font-family: "Agfa Rotis Sans Serif ExBd";
   src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot");
   src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff") format("woff"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.svg#Agfa Rotis Sans Serif ExBd") format("svg"); }
-html {
-  height: 100%; }
-
 body {
   padding: 0;
   margin: 0;
   font-family: "RotisSemiSerifHellenW15-Bd", arial, helvetica, sans-serif;
   font-size: 16px;
-  background: #f2f5f9;
-  height: 100%; }
+  background: #f2f5f9; }
 
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
@@ -43,7 +39,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background-color: #403f38;
   outline: none;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 20px; }
 
 .main-btn[disabled] {
   background-color: #ced1d2;
@@ -101,9 +98,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         font-size: 40px; }
       .main-header .description-text {
         font-size: 16px; } }
-
-.wrap {
-  height: 100%; }
 
 .list-device-classification {
   overflow: hidden;
@@ -222,26 +216,27 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   text-align: center; }
 
 /****new-browse-all-video*****/
-.wrap {
+.wrap-video-page {
+  height: 100vh;
   overflow: hidden; }
-  .wrap .video-fullscreen {
+  .wrap-video-page .video-fullscreen {
     height: 100%;
     width: calc(100% - 350px);
     float: left; }
-    .wrap .video-fullscreen .logo {
+    .wrap-video-page .video-fullscreen .logo {
       position: fixed;
       width: 150px;
       height: auto;
       top: 20px;
       left: 20px;
       z-index: 99; }
-    .wrap .video-fullscreen .videoWrapper {
+    .wrap-video-page .video-fullscreen .videoWrapper {
       overflow: hidden;
       width: 100%;
       height: 100%;
       margin: 0 auto;
       position: relative; }
-      .wrap .video-fullscreen .videoWrapper video {
+      .wrap-video-page .video-fullscreen .videoWrapper video {
         height: 100%;
         width: 100%;
         top: 0;
@@ -252,25 +247,25 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         -moz-object-fit: cover;
         -m-object-fit: cover;
         -webkit-object-fit: cover; }
-  .wrap .aside-header {
+  .wrap-video-page .aside-header {
     width: 350px;
     float: right; }
-    .wrap .aside-header header {
+    .wrap-video-page .aside-header header {
       background-color: #8bbc07;
       padding: 40px 20px 80px; }
-      .wrap .aside-header header h1 {
+      .wrap-video-page .aside-header header h1 {
         color: white;
         font-size: 60px; }
-      .wrap .aside-header header .description-text {
+      .wrap-video-page .aside-header header .description-text {
         color: white;
         padding-top: 20px;
         font-size: 18px; }
     @media only screen and (max-width: 1400px) {
-      .wrap .aside-header header {
+      .wrap-video-page .aside-header header {
         padding: 20px 20px 50px; }
-        .wrap .aside-header header h1 {
+        .wrap-video-page .aside-header header h1 {
           font-size: 40px; }
-        .wrap .aside-header header .description-text {
+        .wrap-video-page .aside-header header .description-text {
           color: white;
           padding-top: 16px;
           font-size: 18px; } }
