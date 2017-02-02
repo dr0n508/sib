@@ -1,12 +1,19 @@
 $(document).ready(function(){
 
     $( "li .item" ).click(function() {
-        $("li .item.left").addClass("animated fadeOutLeft");
-        setTimeout(function(){
-            $('li .item.right').addClass('animated bounce');
-        }, 1000);
+
+
+        $("li .item.left").addClass("animated fadeOut");
+
+
+        // setTimeout(function(){
+        //     $('li .item.right').addClass('animated bounce');
+        // }, 2000);
         setTimeout(function(){
             $('li .item.right').addClass('animated fadeOutRight');
+        }, 1000);
+        setTimeout(function(){
+            $(".header-index .container").addClass('animated bounceOutUp');
         }, 2000);
     });
 
@@ -34,16 +41,23 @@ $(document).ready(function(){
     });
 
     $( "#start-test" ).click(function() {
-        $(".item-person.not-check").addClass("animated fadeOutLeft");
+        $(this).addClass('animated bounceIn');
+        $(".item-person.not-check").addClass("animated bounceOut");
+        // setTimeout(function(){
+        //     $('.item-person.check').addClass('animated bounce');
+        // }, 1000);
         setTimeout(function(){
-            $('.item-person.check').addClass('animated bounce');
-        }, 1000);
+            $('.item-person.check').addClass('animated bounceOutRight');
+        }, 1500);
         setTimeout(function(){
-            $('.item-person.check').addClass('animated fadeOutRight');
-        }, 2000);
+            $('.header-chose3people').addClass('animated bounceOutUp');
+        }, 2500);
+
     });
 
     /***video***/
+
+
 
     var vid = document.getElementById("main-video");
     vid.onplay = function() {
