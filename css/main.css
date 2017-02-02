@@ -1,15 +1,33 @@
 @font-face {
-  font-family: "RotisSemiSerifHellenW15-Bd";
-  src: url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.eot");
-  src: url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.woff") format("woff"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a6ee3b6fce4463f3267a0725c3859b0c.svg#RotisSemiSerifHellenW15-Bd") format("svg"); }
+  font-family: 'RotisSemiSerifPro-Bold';
+  src: url("../fonts/RotisSemiSerifPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RotisSemiSerifPro-Bold.otf") format("opentype"), url("../fonts/RotisSemiSerifPro-Bold.woff") format("woff"), url("../fonts/RotisSemiSerifPro-Bold.ttf") format("truetype"), url("../fonts/RotisSemiSerifPro-Bold.svg#RotisSemiSerifPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: "RotisSansSerif";
-  src: url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.eot");
-  src: url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.woff") format("woff"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d979624d1cb77d6523f9b3adc2bcef31.svg#RotisSansSerif") format("svg"); }
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.otf") format("opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
-  font-family: "Agfa Rotis Sans Serif ExBd";
-  src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot");
-  src: url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.woff") format("woff"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/acb1014858edd2599801c37ef2bd5017.svg#Agfa Rotis Sans Serif ExBd") format("svg"); }
+  font-family: 'RotisSansSerifPro-Light';
+  src: url("../fonts/RotisSansSerifPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/RotisSansSerifPro-Light.otf") format("opentype"), url("../fonts/RotisSansSerifPro-Light.woff") format("woff"), url("../fonts/RotisSansSerifPro-Light.ttf") format("truetype"), url("../fonts/RotisSansSerifPro-Light.svg#RotisSansSerifPro-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RotisSemiSerifHellenW15-Bd';
+  src: url("../fonts/RotisSemiSerifHellenW15-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/RotisSemiSerifHellenW15-Bd.woff") format("woff"), url("../fonts/RotisSemiSerifHellenW15-Bd.ttf") format("truetype"), url("../fonts/RotisSemiSerifHellenW15-Bd.svg#RotisSemiSerifHellenW15-Bd") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ATRotisSansSerif';
+  src: url("../fonts/ATRotisSansSerif.eot?#iefix") format("embedded-opentype"), url("../fonts/ATRotisSansSerif.otf") format("opentype"), url("../fonts/ATRotisSansSerif.woff") format("woff"), url("../fonts/ATRotisSansSerif.ttf") format("truetype"), url("../fonts/ATRotisSansSerif.svg#ATRotisSansSerif") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'RotisSansSerif-ExtraBold';
+  src: url("../fonts/RotisSansSerif-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RotisSansSerif-ExtraBold.otf") format("opentype"), url("../fonts/RotisSansSerif-ExtraBold.woff") format("woff"), url("../fonts/RotisSansSerif-ExtraBold.ttf") format("truetype"), url("../fonts/RotisSansSerif-ExtraBold.svg#RotisSansSerif-ExtraBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   padding: 0;
   margin: 0;
@@ -29,7 +47,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 /*****btn****/
 .main-btn {
-  font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+  font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
   display: inline-block;
   text-transform: uppercase;
   color: white;
@@ -47,7 +65,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   cursor: default; }
 
 .lite-btn {
-  font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+  font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
   color: #83837f;
   text-transform: uppercase;
   text-decoration: none;
@@ -87,10 +105,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   padding: 20px 0 70px;
   color: white; }
   .main-header h1 {
-    font-size: 60px; }
+    font-size: 60px;
+    font-family: 'RotisSemiSerifPro-Bold'; }
   .main-header .description-text {
-    font-family: "RotisSansSerif", arial, helvetica, sans-serif;
-    font-size: 18px; }
+    font-family: "ATRotisSansSerif", arial, helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px; }
   @media only screen and (max-width: 1400px) {
     .main-header {
       padding: 20px 0 50px; }
@@ -120,10 +140,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       background-color: white; }
       .list-device-classification .item .wrap-text h2 {
         color: #546c79;
-        padding-bottom: 20px; }
+        padding-bottom: 20px;
+        font-family: "RotisSemiSerifPro-Bold", arial, helvetica, sans-serif; }
       .list-device-classification .item .wrap-text p {
-        font-family: "RotisSansSerif", arial, helvetica, sans-serif;
-        color: #90a2ac; }
+        font-family: "ATRotisSansSerif", arial, helvetica, sans-serif;
+        color: #90a2ac;
+        letter-spacing: 1px; }
     .list-device-classification .item .btn-select {
       display: block;
       padding: 20px 0;
@@ -175,7 +197,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-size: 46px;
     font-weight: 600; }
     .list-persons .hover p {
-      font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+      font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
       position: absolute;
       width: 100%;
       top: 50%;
@@ -202,15 +224,15 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   margin: 80px 0; }
   .table-results thead tr td {
     text-transform: uppercase;
-    font-family: "RotisSansSerif", arial, helvetica, sans-serif;
+    font-family: "ATRotisSansSerif", arial, helvetica, sans-serif;
     color: #99a0af;
     font-size: 14px; }
   .table-results tbody tr td {
-    font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+    font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
     font-size: 30px;
     padding: 10px 0; }
   .table-results tbody tr .number-td {
-    font-family: "RotisSansSerif", arial, helvetica, sans-serif; }
+    font-family: "RotisSansSerifPro-Light", arial, helvetica, sans-serif; }
 
 .wrap-btn.results {
   text-align: center; }
@@ -254,12 +276,15 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       background-color: #8bbc07;
       padding: 40px 20px 80px; }
       .wrap-video-page .aside-header header h1 {
+        font-family: 'RotisSemiSerifPro-Bold';
         color: white;
         font-size: 60px; }
       .wrap-video-page .aside-header header .description-text {
         color: white;
         padding-top: 20px;
-        font-size: 18px; }
+        font-size: 18px;
+        font-family: "ATRotisSansSerif", arial, helvetica, sans-serif;
+        letter-spacing: 1px; }
     @media only screen and (max-width: 1400px) {
       .wrap-video-page .aside-header header {
         padding: 20px 20px 50px; }
@@ -285,7 +310,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     right: 0; }
     .wrap-aside .control-video-btns .main-btn {
       width: 100%;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      font-family: 'Montserrat-Regular', arial, helvetica, sans-serif; }
+    .wrap-aside .control-video-btns .lite-btn {
+      font-family: 'Montserrat-Regular', arial, helvetica, sans-serif; }
     .wrap-aside .control-video-btns i {
       padding: 0 10px; }
 
@@ -320,7 +348,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       float: left; }
     .list-videos .wrap-item .number-video {
       font-size: 46px;
-      font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+      font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
       color: white;
       text-align: center;
       width: 100%;
@@ -336,7 +364,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     z-index: 7; }
     .list-videos .counter-video .number-video {
       width: 100%;
-      font-family: "Agfa Rotis Sans Serif ExBd", arial, helvetica, sans-serif;
+      font-family: "RotisSansSerif-ExtraBold", arial, helvetica, sans-serif;
       color: #83847f;
       font-size: 28px;
       position: absolute;
