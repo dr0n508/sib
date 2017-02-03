@@ -11,10 +11,6 @@ $(document).ready(function(){
 
         $(".list-device-classification .item").addClass("animated fadeOutDown");
 
-        // $(".list-device-classification .item.left").addClass("animated fadeOut");
-        // setTimeout(function(){
-        //     $('.list-device-classification .item.right').addClass('animated fadeOutRight');
-        // }, 1000);
         setTimeout(function(){
             $(".header-index").addClass('fadeOut');
         }, 500);
@@ -54,27 +50,13 @@ $(document).ready(function(){
     $( "#start-test" ).click(function() {
         $(this).addClass('animated bounceIn');
 
-
         $(".chose3people").addClass("fadeOutDown");
-
-
 
         $(".item-person.not-check").addClass("animated bounceOut");
 
         setTimeout(function(){
             $(".main-header").addClass('fadeOut');
         }, 500);
-
-
-        // setTimeout(function(){
-        //     $('.item-person.check').addClass('animated bounce');
-        // }, 1000);
-        // setTimeout(function(){
-        //     $('.item-person.check').addClass('animated bounceOutRight');
-        // }, 1500);
-        // setTimeout(function(){
-        //     $('.header-chose3people').addClass('animated bounceOutUp');
-        // }, 2500);
 
     });
 
@@ -88,27 +70,16 @@ $(document).ready(function(){
 
         $(".table-and-button").addClass("animated fadeOutDown");
 
-        // $(".list-device-classification .item.left").addClass("animated fadeOut");
-        // setTimeout(function(){
-        //     $('.list-device-classification .item.right').addClass('animated fadeOutRight');
-        // }, 1000);
         setTimeout(function(){
             $(".main-header").addClass('fadeOut');
         }, 500);
     });
 
-
-
-
     /***video***/
-
 
     setTimeout(function(){
         $(".video-fullscreen").addClass("animated fadeIn opacity100");
     }, 500);
-
-
-
 
     var vid = document.getElementById("main-video");
     vid.onplay = function() {
@@ -140,7 +111,6 @@ $(document).ready(function(){
         $('#next-video').prop('disabled', true);
     });
 
-
     /****same height video and counter thumbnail****/
     maintainSameHeight($('[data-same-height="video"]'));
 
@@ -157,8 +127,6 @@ $(document).ready(function(){
         $list.css("height", height);
     }
     /******/
-
-
 
 
 
