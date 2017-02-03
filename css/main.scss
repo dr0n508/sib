@@ -84,6 +84,13 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   border: none;
   cursor: pointer;
   margin-bottom: 20px;
+  -moz-transition: all .15s;
+  -webkit-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+  &:hover {
+    background-color: #68675f;
+  }
 }
 
 .main-btn[disabled] {
@@ -100,6 +107,14 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   border: none;
   background: none;
   cursor: auto;
+  -moz-transition: all .15s;
+  -webkit-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+  cursor: pointer;
+    &:hover {
+      color: #a8a8a4;
+    }
 }
 .lite-btn[disabled] {
   color: #ced1d2;
@@ -562,6 +577,9 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     -webkit-transform: translate3d(0, 20%, 0);
     transform: translate3d(0, 20%, 0);
   }
+  40% {
+    opacity: 1;
+  }
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -574,6 +592,9 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     opacity: 0;
     -webkit-transform: translate3d(0, 20%, 0);
     transform: translate3d(0, 20%, 0);
+  }
+  40% {
+    opacity: 1;
   }
   to {
     opacity: 1;

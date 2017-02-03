@@ -79,7 +79,7 @@ $(document).ready(function(){
     }, 500);
     setTimeout(function(){
         $(".wrap-btn.results").addClass("animated fadeInUp opacity100");
-    }, 750);
+    }, 1000);
 
 
     $( "#back-to-main" ).click(function() {
