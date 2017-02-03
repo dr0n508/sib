@@ -149,10 +149,26 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; }
       .list-device-classification .item:hover .btn-select, .list-device-classification .item:focus .btn-select {
         background-color: #403f38; }
-    .list-device-classification .item .wrap-img img {
-      width: 100%;
-      height: auto;
-      display: block; }
+      .list-device-classification .item:hover .wrap-img::before, .list-device-classification .item:focus .wrap-img::before {
+        background-color: rgba(255, 255, 255, 0); }
+    .list-device-classification .item .wrap-img {
+      position: relative; }
+      .list-device-classification .item .wrap-img:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.15);
+        -moz-transition: all .3s;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+      .list-device-classification .item .wrap-img img {
+        width: 100%;
+        height: auto;
+        display: block; }
     .list-device-classification .item .wrap-text {
       padding: 50px 30px 60px;
       background-color: white; }
@@ -184,6 +200,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /******chose3person****/
 .list-persons {
   opacity: 0;
+  padding: 5px;
   overflow: hidden;
   position: relative;
   margin-top: -30px; }
@@ -200,12 +217,26 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
+    .list-persons .item-person:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.15);
+      -moz-transition: all .3s;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
     .list-persons .item-person img {
       width: 100%;
       height: auto;
       float: left; }
     .list-persons .item-person:hover, .list-persons .item-person:focus {
       box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; }
+      .list-persons .item-person:hover:before, .list-persons .item-person:focus:before {
+        background-color: rgba(255, 255, 255, 0); }
   .list-persons .item-person.check .hover {
     visibility: visible;
     opacity: 1; }
