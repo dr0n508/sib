@@ -70,7 +70,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   -moz-box-sizing: border-box;
 }
 
-
 /*****btn****/
 .main-btn {
   font-family: "PhonakRotis-Bold", arial, helvetica, sans-serif;
@@ -120,15 +119,27 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
-.opacity100 {
-  opacity: 1
+.opacity100 { opacity: 1 }
+
+.fr { float: right; }
+
+.fl { float: left; }
+
+.w25 {
+  width: 25%;
+  float: left;
+  padding: 5px;
 }
 
-.fr {
-  float: right;
+.w33 {
+  width: 33.333%;
+  float: left;
+  padding: 0 5px;
 }
 
-.fl {
+.w50 {
+  width: 50%;
+  padding-right: 15px;
   float: left;
 }
 
@@ -152,7 +163,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   color: white;
   h1 {
     font-size: 60px;
-    font-family: 'RotisSemiSerifPro-Bold';
+    font-family: 'RotisSemiSerifPro-Bold', arial, helvetica, sans-serif;
   }
   .description-text {
     font-family: "ATRotisSansSerif", arial, helvetica, sans-serif;
@@ -170,11 +181,7 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   //overflow: hidden;
   position: relative;
   top: -30px;
-  .w50 {
-    width: 50%;
-    padding-right: 15px;
-    float: left;
-  }
+
   .item {
     opacity: 0;
     border-radius: 5px;
@@ -257,12 +264,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   overflow: hidden;
   position: relative;
   margin-top: -30px;
-  .w25 {
-    width: 25%;
-    float: left;
-    padding: 5px;
-  }
-
   .item-person {
     //height: 140px;
     border-radius: 3px;
@@ -298,13 +299,10 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
       }
     }
   }
-
   .item-person.check .hover {
-    //display: block;
     visibility: visible;
     opacity: 1;
   }
-
   .item-person.not-check .hover {
     visibility: visible;
     opacity: 1;
@@ -314,7 +312,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     }
   }
   .hover {
-    //display: none;
     visibility: hidden;
     opacity: 0;
     width: 100%;
@@ -361,10 +358,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 }
 
 /****table****/
-
-//.table-and-button {
-//  opacity: 0;
-//}
 
 .table-results {
   opacity: 0;
@@ -464,10 +457,8 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     @media only screen and (max-width: 1400px) {
       width: 350px;
       header {
-        //background-color: #8bbc07;
         padding: 20px 20px 30px;
         h1 {
-          //color: white;
           font-size: 40px;
         }
         .description-text {
@@ -478,12 +469,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
       }
     }
   }
-}
-
-.w33 {
-  width: 33.333%;
-  float: left;
-  padding: 0 5px;
 }
 
 .wrap-aside {
@@ -571,15 +556,12 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 /****change animate.css***/
-
-
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 20%, 0);
     transform: translate3d(0, 20%, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -593,7 +575,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     -webkit-transform: translate3d(0, 20%, 0);
     transform: translate3d(0, 20%, 0);
   }
-
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -601,12 +582,10 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
-
 @-webkit-keyframes fadeOutDown {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     -webkit-transform: translate3d(0, 20%, 0);
@@ -618,7 +597,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     -webkit-transform: translate3d(0, 20%, 0);

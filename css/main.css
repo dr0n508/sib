@@ -99,6 +99,21 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .fl {
   float: left; }
 
+.w25 {
+  width: 25%;
+  float: left;
+  padding: 5px; }
+
+.w33 {
+  width: 33.333%;
+  float: left;
+  padding: 0 5px; }
+
+.w50 {
+  width: 50%;
+  padding-right: 15px;
+  float: left; }
+
 .first-page:after {
   content: '';
   position: fixed;
@@ -116,7 +131,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   color: white; }
   .main-header h1 {
     font-size: 60px;
-    font-family: 'RotisSemiSerifPro-Bold'; }
+    font-family: 'RotisSemiSerifPro-Bold', arial, helvetica, sans-serif; }
   .main-header .description-text {
     font-family: "ATRotisSansSerif", arial, helvetica, sans-serif;
     font-size: 18px;
@@ -132,10 +147,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .list-device-classification {
   position: relative;
   top: -30px; }
-  .list-device-classification .w50 {
-    width: 50%;
-    padding-right: 15px;
-    float: left; }
   .list-device-classification .item {
     opacity: 0;
     border-radius: 5px;
@@ -204,10 +215,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   overflow: hidden;
   position: relative;
   margin-top: -30px; }
-  .list-persons .w25 {
-    width: 25%;
-    float: left;
-    padding: 5px; }
   .list-persons .item-person {
     border-radius: 3px;
     position: relative;
@@ -372,11 +379,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
             color: white;
             padding-top: 16px;
             font-size: 18px; } }
-
-.w33 {
-  width: 33.333%;
-  float: left;
-  padding: 0 5px; }
 
 .wrap-aside {
   position: relative;
