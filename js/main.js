@@ -4,7 +4,7 @@ $(document).ready(function(){
     /****animated-index*****/
 
     setTimeout(function(){
-        $(".list-device-classification .item").addClass("animated fadeInUp block");
+        $(".list-device-classification .item").addClass("animated fadeInUp opacity100");
     }, 500);
 
     $( ".list-device-classification .item" ).click(function() {
@@ -21,11 +21,14 @@ $(document).ready(function(){
     });
 
 
+
+
+
 /****chose-3-persons****/
 
 
     setTimeout(function(){
-        $(".chose3people").addClass("animated fadeInUp block");
+        $(".chose3people").addClass("animated fadeInUp opacity100");
     }, 500);
 
     $( ".item-person" ).click(function() {
@@ -75,7 +78,35 @@ $(document).ready(function(){
 
     });
 
+    /****results***/
+
+    setTimeout(function(){
+        $(".table-and-button").addClass("animated fadeInUp opacity100");
+    }, 500);
+
+    $( "#back-to-main" ).click(function() {
+
+        $(".table-and-button").addClass("animated fadeOutDown");
+
+        // $(".list-device-classification .item.left").addClass("animated fadeOut");
+        // setTimeout(function(){
+        //     $('.list-device-classification .item.right').addClass('animated fadeOutRight');
+        // }, 1000);
+        setTimeout(function(){
+            $(".main-header").addClass('fadeOut');
+        }, 500);
+    });
+
+
+
+
     /***video***/
+
+
+    setTimeout(function(){
+        $(".video-fullscreen").addClass("animated fadeIn opacity100");
+    }, 500);
+
 
 
 
@@ -126,5 +157,10 @@ $(document).ready(function(){
         $list.css("height", height);
     }
     /******/
+
+
+
+
+
 
 });

@@ -120,6 +120,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       .main-header .description-text {
         font-size: 16px; } }
 
+.opacity100 {
+  opacity: 1; }
+
 .list-device-classification {
   position: relative;
   top: -30px; }
@@ -127,8 +130,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     width: 50%;
     padding-right: 15px;
     float: left; }
-  .list-device-classification .block {
-    opacity: 1; }
   .list-device-classification .item {
     opacity: 0;
     border-radius: 5px;
@@ -245,6 +246,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   border: solid 3px #f2ae0c; }
 
 /****table****/
+.table-and-button {
+  opacity: 0; }
+
 .table-results {
   border-collapse: collapse;
   width: 100%;
@@ -269,6 +273,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   height: 100vh;
   overflow: hidden; }
   .wrap-video-page .video-fullscreen {
+    opacity: 0;
     height: 100%;
     width: calc(100% - 420px);
     float: left; }
