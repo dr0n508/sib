@@ -33,7 +33,8 @@ body {
   margin: 0;
   font-family: "RotisSemiSerifHellenW15-Bd", arial, helvetica, sans-serif;
   font-size: 16px;
-  background: #f2f5f9; }
+  background: #f2f5f9;
+  overflow: hidden; }
 
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
@@ -126,10 +127,21 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     width: 50%;
     padding-right: 15px;
     float: left; }
+  .list-device-classification .block {
+    opacity: 1; }
   .list-device-classification .item {
+    opacity: 0;
     border-radius: 5px;
     overflow: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .list-device-classification .item:hover, .list-device-classification .item:focus {
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; }
+      .list-device-classification .item:hover .btn-select, .list-device-classification .item:focus .btn-select {
+        background-color: #403f38; }
     .list-device-classification .item .wrap-img img {
       width: 100%;
       height: auto;
@@ -153,14 +165,19 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       color: white;
       text-transform: uppercase;
       text-decoration: none;
-      background-color: #403f38; }
-      .list-device-classification .item .btn-select:hover {
-        background-color: #83837f; }
+      background-color: #83837f;
+      -moz-transition: all .3s;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }
     @media only screen and (max-width: 1400px) {
       .list-device-classification .item .wrap-text {
         padding: 30px 30px 30px; } }
 
 /******chose3person****/
+.chose3people {
+  opacity: 0; }
+
 .list-persons {
   position: relative;
   margin-top: -30px; }
@@ -172,11 +189,17 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     border-radius: 3px;
     position: relative;
     overflow: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
     .list-persons .item-person img {
       width: 100%;
       height: auto;
       float: left; }
+    .list-persons .item-person:hover, .list-persons .item-person:focus {
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; }
   .list-persons .item-person.check .hover {
     visibility: visible;
     opacity: 1; }

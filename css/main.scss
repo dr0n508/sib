@@ -54,6 +54,7 @@ body {
   font-family: "RotisSemiSerifHellenW15-Bd", arial, helvetica, sans-serif;
   font-size: 16px;
   background: #f2f5f9;
+  overflow: hidden;
   //height: 100%;
 }
 
@@ -163,10 +164,24 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     padding-right: 15px;
     float: left;
   }
+  .block {
+    opacity: 1
+  }
   .item {
+    opacity: 0;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    &:hover, &:focus {
+      box-shadow: (rgba(black, 0.45) 0px 0px 20px 0px);
+      .btn-select {
+          background-color: #403f38;
+      }
+    }
     .wrap-img {
       img {
         width: 100%;
@@ -196,10 +211,12 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
       color: white;
       text-transform: uppercase;
       text-decoration: none;
-      background-color: #403f38;
-      &:hover {
-        background-color: #83837f;
-      }
+      background-color: #83837f;
+      -moz-transition: all .3s;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+
     }
     @media only screen and (max-width: 1400px) {
       .wrap-text { padding: 30px 30px 30px; }
@@ -208,6 +225,10 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
 }
 
 /******chose3person****/
+
+.chose3people {
+  opacity: 0;
+}
 
 .list-persons {
   //overflow: hidden;
@@ -230,6 +251,13 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
       height: auto;
       float: left;
     }
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    &:hover, &:focus {
+      box-shadow: (rgba(black, 0.45) 0px 0px 20px 0px);
+    }
   }
 
   .item-person.check .hover {
@@ -245,7 +273,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     p {
       display: none;
     }
-
   }
   .hover {
     //display: none;
