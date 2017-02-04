@@ -98,9 +98,7 @@ $(document).ready(function(){
 
     /***video***/
 
-    setTimeout(function(){
-        $(".video-fullscreen").addClass("animated fadeIn opacity100");
-    }, 500);
+    $(".video-fullscreen").addClass("animated fadeIn opacity100");
 
     setTimeout(function(){
         $(".list-videos").addClass("animated fadeInUp opacity100");
